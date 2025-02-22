@@ -343,7 +343,6 @@ def fwd_update_step(q_chunk, k_chunk, v_chunk, o_chunk, row_sum, row_max, causal
 
 
     
-from EasyLM import jax_utils
 
 
 def create_nsa_metadata(block_mask, q_chunk_size, k_chunk_size, inner_chunk_bs, visit_empty_groups=False, keep_in_vmem="kv"):
@@ -370,7 +369,6 @@ def create_nsa_metadata(block_mask, q_chunk_size, k_chunk_size, inner_chunk_bs, 
     
     return group_metadata, num_active_tiles, query_idxs_sorted, mask_sorted
 
-from EasyLM.jax_utils import always_debug_print
 
 def maybe_apply_causal_mask(queries_for_key, causal, q_chunk_size, key_id, k_chunk_size, q_block_idx, k_block_idx):
     """
