@@ -6,7 +6,7 @@ This is a JAX implementation of the NSA attention mechanism.
 
 https://arxiv.org/pdf/2502.11089
 
-![Architecture](image.png)
+![Architecture](imgs/image.png)
 
 
 I actually implemented this back in September of 2024 lol
